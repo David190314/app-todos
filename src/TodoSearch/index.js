@@ -11,7 +11,7 @@ const TodoSearch = () => {
   return (
     <input
       className="TodoSearch"
-      placeholder="Completar el proyecto de React"
+      placeholder="Search"
       value={searchValue}
       onChange={onSearchValueChange}
     />
