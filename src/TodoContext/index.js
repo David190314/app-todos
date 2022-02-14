@@ -1,6 +1,5 @@
 import React from "react";
 import useLocalStorage from "../Hooks/LocalStorage";
-import { Defaultodos } from "../Data/data";
 const TodoContext = React.createContext();
 
 function TodoProvider(props) {
@@ -8,7 +7,7 @@ function TodoProvider(props) {
     item: todos,
     saveItem: saveTodos,
     loading
-  } = useLocalStorage("TODOS_V1", Defaultodos);
+  } = useLocalStorage("TODOS_V1", []);
 
   const [searchValue, setSearchValue] = React.useState("");
   const [openModal, setOpenModal] = React.useState(false);
